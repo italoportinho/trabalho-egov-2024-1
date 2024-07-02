@@ -1,0 +1,29 @@
+Apresentação de sexta
+
+1) Introdução, apresentar o artigo base (o mesmo artigo base do seminario)
+
+2) Normatização: leis que garantem acesso ao dado.
+
+3) Dados Abertos Especializados
+   3.1) INDE decreto 666???
+   3.2) Explicar amissão da inde e seu ecossistema de aplicações: portal, visualizador, metadados e geosserviços(além do monitorador);
+   3.3) Mostrar como usar o visualizador, exemplos de camadas, metadados, url wms da camada para PNG, e geojson
+
+4) Estudo de caso: PolRoute-DS
+4.1) IDA Do csv ao datawarehouse, e o projeto de distribuição  e fragmentação;
+4.2) VOLTA Exportação de datasets para gerar camadas;
+4.3) Criando uma camada compreensivel com os dados do dataset
+   4.3.1) De EWKB para Lat/Long com QGIS;
+   4.3.2) Exportando como geojson
+   4.3.3) Mostrando a camada com MapLibre
+   4.3.4) Dados abertos da inde: a camada com o limite dos distritos
+   
+5) Problemas e imperfeições
+   5.1) Ausencia de metadados;
+   5.2) Impossibilidade de downloads;
+   5.3) Camadas imperfeitas ou com erros;
+   5.4) Painel pnadc, número abreviados, ausência de download da camada sendo que mostra camada e geometria. Download na verdade está escondido.
+
+
+
+http://ide.emplasa.sp.gov.br/geoserver/ows?service=WMS&version=1.1.0&request=GetFeature&typeName=emplasa:LIMITES_EMPLASA_DISTRITO_UIT_MSP&styles=&tiled=true&srsName=EPSG:4326&format=application/geojson&transparent=true
