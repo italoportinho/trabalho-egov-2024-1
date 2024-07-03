@@ -1,0 +1,20 @@
+1) Introdução:
+	- Apresentação de resumo do artigo base;
+	- Definição de interpretabilidade no contexto de dados abertos governamentais;
+
+2) Análise do Visualizador da INDE
+	- Normatização: leis, decretos e instruções normativas que garantam divulgação e acesso aos dados abertos;
+	- a INDE e seu ecossistema e instituições, a missão da inde, formas de adesão(nó próprio, nó central);
+	- O visualizador, exibição e download de camadas, metadados, definição de geoserviço, problemas (metadados ausentes, mal preenchidos, downloads ausentes, camadas mal feitas)	
+
+
+3) Estudo de caso: transformando dados abertos em conhecimento.
+	- objetivo: mostrar como dados abertos e sua interoperabilidade por transformar um conjunto enorme de difícil análise em informação e conhecimento;
+	- dataset polroute: mostrar uma imagem do schema;
+	- IDA: polroute csv's para o apache hive, DDL e construção de consultas;
+	- VOLTA: das consultas para uma tabela separada, hadoop para criar arquivos csv com os datasets necessários.
+	- QGIS para transformar a geometria de formato binário para lat/long;
+	- MapLibre para exibir a camada no mapa.	
+
+4) Conclusões.
+	- Interoperabilidade de dados abertos: camada do geosampa, disponível no visualizador, usada no mapa da aplicação maplibre;
