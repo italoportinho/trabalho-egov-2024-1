@@ -5,6 +5,53 @@
 2) Análise do Visualizador da INDE
 	- Normatização: leis, decretos e instruções normativas que garantam divulgação e acesso aos dados abertos;
 	- a INDE e seu ecossistema e instituições, a missão da inde, formas de adesão(nó próprio, nó central);
+
+A Infraestrutura Nacional de Dados Espaciais – INDE foi instituída pelo Decreto Nº 6.666 de 27/11/2008 com a seguinte definição: Conjunto integrado de tecnologias; políticas; mecanismos e procedimentos de coordenação e monitoramento; padrões e acordos, necessário para facilitar e ordenar a geração, o armazenamento, o acesso, o compartilhamento, a disseminação e o uso dos dados geoespaciais de origem federal, estadual, distrital e municipal. A INDE foi concebida com o propósito de catalogar, integrar e harmonizar dados geoespaciais produzidos ou mantidos e geridos nas instituições de governo brasileiras, de modo que possam ser facilmente localizados, explorados em suas características e acessados para os mais variados fins por qualquer usuário com acesso à Internet. A catalogação dos dados geoespaciais é feita mediante seus respectivos metadados pelos próprios produtores e/ou gestores dos dados.
+Conforme o Decreto 6.666/08, a INDE tem como principais objetivos:
+Promover o adequado ordenamento na geração, armazenamento, acesso, compartilhamento, disseminação e uso dos dados geoespaciais;
+Promover a utilização, na produção dos dados geoespaciais pelos órgãos públicos das esferas federal, estadual, distrital e municipal, dos padrões e normas homologados pela Comissão Nacional de Cartografia – CONCAR; e
+Evitar a duplicidade de ações e o desperdício de recursos na obtenção de dados geoespaciais, por meio da divulgação da documentação (metadados) dos dados disponíveis nas entidades e nos órgãos públicos das esferas federal, estadual, distrital e municipal.
+
+Visualizador:
+O Visualizador da INDE oferece aos produtores e usuários de informações geoespaciais mecanismos que permitam explorar os catálogos de metadados e geosserviços localizados em servidores pertencentes a diferentes organizações e instituições.
+
+A aplicação possibilita a criação de mapas e a execução de diferentes funções de visualização e navegação. Abaixo algumas de suas funcionalidades:
+
+Consulta por Instituição e Tema;
+Mecanismo que permita combinar diversos temas para a construção de uma consulta;
+Mecanismos para impressão dos resultados das consultas;
+Mecanismos que permite realizar consultas com filtros por atributos, sua exportação em formato csv e a espacialização do resultado da consulta ;
+Exportação das camadas em formatos csv, kml e shp;
+Mecanismos de comunicação com outras IDEs e plataformas abertas (OSM);
+Exibe/esconde as toponímias;
+Mecanismo de visualização de camadas sobrepostas por deslizamento da janela da camada mais ao topo e transparência;
+Mecanisno de busca de localidades e aproximação para a localidade de interesse.
+
+Catálogo de Metadados:
+Na prática, os metadados visam descrever, localizar, facilitar a recuperação e gerência de um recurso de informação. Assim, para que os metadados, escritos segundo o perfil de Metadados Geoespaciais do Brasil (MGB), possam, efetivamente, alcançar esses propósitos, o perfil MGB foi implantado em um software chamado Geonetwork.
+O GeoNetwork é um catálogo de metadados livre, de código aberto, distribuído, inicialmente, pela FAO/ONU. Essas características (livre e de código aberto) permitiram que o mesmo fosse customizado para atender as necessidades brasileiras.
+Por estar aderente aos padrões adotados na INDE e por ser um software de livre distribuição, o GeoNetwork é a ferramenta recomendada no plano de ação para a implantação da INDE para carga e gestão de metadados geoespaciais . Entre as principais características do catálogo estão:
+
+A utilização de protocolos e ferramentas que permitem a implantação de uma rede distribuída de metadados entre diferentes nós participantes de uma rede;
+A implementação de níveis de segurança permitindo a definição de grupos e papéis e seus privilégios para a edição, consulta e disseminação de metadados;
+Uma interface globalizada, que permite o acesso aos metadados nos idiomas português-br, inglês e espanhol;
+A recuperação dos metadados através de mecanismos de busca avançada, que permitem a busca por elementos como as categorias de informação (ex: Solos, Altimetria, Vegetação, etc), retângulo envolvente do produto documentado, palavra-chave, etc.;
+A carga e exibição de metadados nos principais padrões internacionais: ISO-19115/ 19139, FGDC e Dublin-Core;
+A adesão a padrões de serviços OGC (Open Geospatial Consortium).
+
+Catálogo de Geosserviços:
+
+Geosserviços são serviços web específicos para o domínio geoespacial, constituindo um poderoso conjunto de funcionalidades para coletar, armazenar, recuperar sem restrições, transformar e apresentar dados espaciais associados a um determinado objetivo. Essas funcionalidades são usadas por meio de um navegador Web ou outra aplicação qualquer (QGIS ou um aplicativo em Smartphone, por exemplo). Através dos geosserviços é possível exportar informações geoespaciais para uma ampla gama de formatos, tanto para edição de objetos como para a apresentação de mapas. A INDE adotou os padrões do Open Geospational Consortium OGC para a especificação de seus geosserviços. Abaixo são listadas as implementações disponíveis desses padrões:
+
+WMS (Web Map Service): define um geosserviço para uma representação visual dos dados espaciais em algum formato de imagem e não os dados em si. Estas representações serão geradas no formato de imagem, como JPEG, PNG e GIF ou em formato vetorial, como o Scalable Vector Graphics (SVG). Este padrão especifica como o cliente deve requisitar as informações para o servidor e como este deve responder ao cliente. As operações WMS podem ser realizadas a partir de um navegador web que fará a submissão das requisições sob a forma de uma URL.
+
+WFS (Web Feature Service): define um serviço para que clientes possam recuperar feições espaciais em formato GML. As operações WFS podem ser realizadas a partir de um navegador web que fará a submissão das requisições sob a forma de uma URL e este retornará os dados em si.
+
+WCS (Web Covarage Service): define o acesso aos dados que representam fenômenos com variação contínua no espaço. Este serviço é especificado para tratamento de dados modelados como geocampos.
+
+
+
+
 	- O visualizador, exibição e download de camadas, metadados, definição de geoserviço, problemas (metadados ausentes, mal preenchidos, downloads ausentes, camadas mal feitas)	
 
 
